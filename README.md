@@ -1,4 +1,4 @@
-# Nhập Môn công nghệ phần mềm
+# Phát triển ứng dụng web 
 Xây dựng website bán hàng sử dụng Nodejs + Express + Mongoose
 Các kỹ thuật sử dụng: 
 - Xác thực bằng Passport
