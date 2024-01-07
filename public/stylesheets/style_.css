@@ -1,0 +1,232 @@
+/* Your existing styles... */
+
+/* Additional Styles for Edit Products Form */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.seller_editPr-list {
+  list-style: none;
+  padding: 0;
+}
+
+.seller_product-items {
+  margin-bottom: 20px;
+}
+
+.seller_product-items p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.seller_product-items input {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.editPro_btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editPro_btn:hover {
+  background-color: #0056b3;
+}
+
+/* Your existing styles... */
+
+/* Your existing styles... */
+
+/* Additional Styles for Delete Product Form */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.deletePro_btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deletePro_btn:hover {
+  background-color: #c82333;
+}
+
+/* Your existing styles... */
+
+/* Your existing styles... */
+
+/* Additional Styles for Add Product Form */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seller_addPr-list {
+  list-style: none;
+  padding: 0;
+}
+
+.seller_product-items {
+  margin-bottom: 20px;
+}
+
+.seller_product-items p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.seller_product-items input {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.img_box {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 22px);
+}
+
+.img_box input {
+  width: 100%;
+  padding: 10px;
+}
+
+.addPro_btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addPro_btn:hover {
+  background-color: #218838;
+}
+
+/* Your existing styles... */
+
+
+.product-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.product-table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.product-table td img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+.user-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.ban-btn,
+.unban-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.unban-btn {
+  background-color: #28a745;
+}

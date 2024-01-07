@@ -434,7 +434,7 @@ exports.postproduct = (req, res, next) => {
 
 exports.getaddCategory = (req, res, next) => {
   if ( req.user.role != "2") {
-    res.render("err2");
+    res.render("addCategory");
   }
   else if(req.user.role == "2") {
     //res.send('you are not seller');
@@ -462,3 +462,70 @@ exports.postaddCategory = (req, res, next) => {
 exports.aboutus =(req, res, next) => {
   res.render("aboutUs");
 }
+
+
+exports.getDeleteProduct =(req, res, next) => {
+  if ( req.user.role == "0") {
+    res.render("err1");
+  }
+  else if(req.user.role != "0") {
+    //res.send('you are not seller');
+    res.render("deleteProduct");
+  }
+}
+
+exports.postDeleteProduct =(req, res, next) => {
+  var prodId = req.body.productId;
+  Products.findOneAndRemove(prodId)
+  .catch(err => {
+    console.error(err)
+  })
+  res.redirect("/dashboard")
+
+}
+
+exports.getEditProduct =(req, res, next) => {
+  if ( req.user.role == "0") {
+    res.render("err1");
+  }
+  else if(req.user.role != "0") {
+    //res.send('you are not seller');
+    res.render("editProduct");
+  }
+}
+
+exports.postEditProduct =(req, res, next) => {
+  var id = req.body.productId;
+  var newname = req.body.newName;
+  var newdescription = req.body.newDescription;
+  var newprice = req.body.newPrice;
+  var img = req.body.newImageURL;
+
+  Products.findByIdAndUpdate(
+    id, 
+    {
+      $set: {
+        name: newname,
+        description: newdescription,
+        price: newprice
+    }},
+    { new: true }
+
+  )
+
+  .then(doc => {
+    console.log(doc.name, doc.description)
+  })
+  .catch(err => {
+    console.error(err)
+  })
+  res.redirect("/dashboard");
+  
+  
+}
+
+exports.getViewProduct =(req, res, next) => {
+  res.render("productView");
+}
+
+

@@ -22,6 +22,8 @@ exports.getAccount = (req, res, next) => {
       messageError:messageError
     });
   });
+
+
 };
 
 exports.getAccountChange = (req, res, next) => {
@@ -48,3 +50,8 @@ exports.postAccountChange = (req, res, next) => {
   req.user.save();
   res.redirect("/account");
 };
+
+
+
+
+

@@ -25,10 +25,11 @@
       href="https://demo-basic.adminkit.io/pages-blank.html"
     />
 
-    <title>Thêm sản phẩm</title>
+    <title></title>
+
+    <link rel="stylesheet" href="stylesheets/style_.css">
 
     <link href="stylesheets/app.css" rel="stylesheet" />
-    <link rel="stylesheet" href="stylesheets/style_.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -37,55 +38,55 @@
 
   <body>
     <div class="wrapper">
-      <nav id="sidebar" class="sidebar js-sidebar">
-        <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="/dashboard">
-            <span class="align-middle">Admin Page </span>
-          </a>
-          <ul class="sidebar-nav">
-            <li class="sidebar-header">
-              Pages
-            </li>
-            <li class="sidebar-item active">
-              <a class="sidebar-link" href="/dashboard">
-                <i class="align-middle" data-feather="sliders"></i> <span
-                  class="align-middle">Dashboard</span>
+        <nav id="sidebar" class="sidebar js-sidebar">
+            <div class="sidebar-content js-simplebar">
+              <a class="sidebar-brand" href="index.html">
+                <span class="align-middle">Admin Page </span>
               </a>
-            </li>
-            <li class="sidebar-header">
-              Management
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/product-view">
-                <i class="align-middle" data-feather="bar-chart-2"></i> <span
-                  class="align-middle">Products List</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/add-product">
-                <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Add
-                  Products</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/delete-product">
-                <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Delete
-                  Products</span>
-              </a>
-  
-              
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/edit-product">
-                <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Edit
-                  Products</span>
-              </a>
-            </li>
-  
-  
-            
-        </div>
-      </nav>
+              <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                  Pages
+                </li>
+                <li class="sidebar-item active">
+                  <a class="sidebar-link" href="/dashboard">
+                    <i class="align-middle" data-feather="sliders"></i> <span
+                      class="align-middle">Dashboard</span>
+                  </a>
+                </li>
+                <li class="sidebar-header">
+                  Management
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link" href="/product-view">
+                    <i class="align-middle" data-feather="bar-chart-2"></i> <span
+                      class="align-middle">Products List</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link" href="/add-product">
+                    <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Add
+                      Products</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link" href="/delete-product">
+                    <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Delete
+                      Products</span>
+                  </a>
+      
+                  
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link" href="edit-product">
+                    <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Edit
+                      Products</span>
+                  </a>
+                </li>
+      
+      
+                
+            </div>
+          </nav>
 
       <div class="main">
         <nav class="navbar navbar-expand navbar-light navbar-bg">
@@ -325,64 +326,54 @@
 
         <main class="content">
           <div class="container-fluid p-0">
-           
-             
-                <form action="/add-product" method="POST">
-                  <ul class="seller_addPr-list">
-                    <li class="seller_product-items">
-                      <p for="">Product Name</p>
-                      <input
-                        type="text"
-                        placeholder="Enter Product Name"
-                        name="name"
-                      />
-                    </li>
-                    <!-- <li class="seller_product-items">
-							  <p for="">Brand Name</p>
-							  <input type="text" placeholder="Enter Brand Name" >
-							</li> -->
-                    <!-- <li class="seller_product-items">
-							  <p for="">Category Name</p>
-							  <input type="text" placeholder="Enter Category ">
-							</li> -->
-                    <li class="seller_product-items">
-                      <p for="">Product Description</p>
-                      <input
-                        type="text"
-                        placeholder="Enter product description "
-                        name="description"
-                      />
-                    </li>
-                    <!-- <li class="seller_product-items">
-							  <p for="">Product Quantity</p>
-							  <input type="text" placeholder="Enter product Quantity">
-							</li> -->
-                    <li class="seller_product-items">
-                      <p for="">Product Price</p>
-                      <input
-                        type="text"
-                        placeholder="Enter product Price "
-                        name="price"
-                      />
-                    </li>
-                    <li class="seller_product-items">
-                      <p for="">Product Image</p>
-                      <div class="img_box">
-                        <input
-                          type="text"
-                          name="imageURL"
-                          placeholder="No file chosen"
-                        />
-                      </div>
-                    </li>
-                    <button class="addPro_btn">Add Product</button>
-                  </ul>
-                </form>
-            
+            <form action="/edit-product" method="POST">
+              <p for="">Product ID to Edit:</p>
+              <input
+                type="text"
+                placeholder="Enter Product ID"
+                name="productId"
+                required
+              />
+              <ul class="seller_editPr-list">
+                <li class="seller_product-items">
+                  <p for="">New Product Name</p>
+                  <input
+                    type="text"
+                    placeholder="Enter New Product Name"
+                    name="newName"
+                  />
+                </li>
+                <li class="seller_product-items">
+                  <p for="">New Product Description</p>
+                  <input
+                    type="text"
+                    placeholder="Enter New Product Description"
+                    name="newDescription"
+                  />
+                </li>
+                <li class="seller_product-items">
+                  <p for="">New Product Price</p>
+                  <input
+                    type="text"
+                    placeholder="Enter New Product Price"
+                    name="newPrice"
+                  />
+                </li>
+                <li class="seller_product-items">
+                  <p for="">New Product Image URL</p>
+                  <input
+                    type="text"
+                    placeholder="Enter New Product Image URL"
+                    name="newImageURL"
+                  />
+                </li>
+              </ul>
+              <button class="editPro_btn">Edit Product</button>
+            </form>
           </div>
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
           <div class="container-fluid">
             <div class="row text-muted">
               <div class="col-6 text-start">
@@ -438,12 +429,10 @@
                     >
                   </li>
                 </ul>
-                
               </div>
             </div>
           </div>
-        </footer> -->
-        
+        </footer>
       </div>
     </div>
 

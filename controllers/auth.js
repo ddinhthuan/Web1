@@ -15,6 +15,7 @@ exports.getLogin = (req, res, next) => {
   }
   const message = req.flash("error")[0];
   if (!req.isAuthenticated()) {
+    
     res.render("login", {
       title: "Đăng nhập",
       message: `${message}`,
@@ -24,9 +25,12 @@ exports.getLogin = (req, res, next) => {
   } else {
     res.redirect("/");
   }
+  console.log(req.user);
+ 
 };
 
 exports.postLogin = (req, res, next) => {
+  console.log(req.user);
   passport.authenticate("local-signin", {
     successReturnToOrRedirect: "/merge-cart",
     failureRedirect: "/login",
@@ -229,3 +233,4 @@ exports.postChangePassword = (req, res, next) => {
     }
   });
 };
+

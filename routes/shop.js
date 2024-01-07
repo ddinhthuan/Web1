@@ -43,5 +43,16 @@ router.get("/add-category", productController.getaddCategory);
 
 router.post("/add-category", productController.postaddCategory);
 
-router.get("/about-us", productController.aboutus);
+router.get("/dashboard", productController.aboutus);
+
+router.get("/delete-product", productController.getDeleteProduct);
+
+router.post("/delete-product", productController.postDeleteProduct);
+
+router.get("/edit-product", productController.getEditProduct);
+
+router.post("/edit-product", productController.postEditProduct);
+
+router.get("/product-view", productController.getViewProduct);
+
 module.exports = router;

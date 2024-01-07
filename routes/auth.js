@@ -3,6 +3,7 @@ var router = express.Router();
 var passport = require("passport");
 const authController = require("../controllers/auth");
 const userController = require("../controllers/user");
+const adminController = require("../controllers/admincontroller");
 
 router.get("/login", authController.getLogin);
 
@@ -31,5 +32,8 @@ router.post("/forgot-password", authController.postForgotPass);
 router.get("/change-password", authController.getChangePassword);
 
 router.post("/change-password", authController.postChangePassword);
+
+router.get("/change-password", adminController.admin);
+
 
 module.exports = router;

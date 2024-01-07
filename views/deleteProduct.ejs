@@ -25,10 +25,11 @@
       href="https://demo-basic.adminkit.io/pages-blank.html"
     />
 
-    <title>Thêm sản phẩm</title>
+    <title></title>
+
+    <link rel="stylesheet" href="stylesheets/style_.css">
 
     <link href="stylesheets/app.css" rel="stylesheet" />
-    <link rel="stylesheet" href="stylesheets/style_.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -39,7 +40,7 @@
     <div class="wrapper">
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="/dashboard">
+          <a class="sidebar-brand" href="index.html">
             <span class="align-middle">Admin Page </span>
           </a>
           <ul class="sidebar-nav">
@@ -325,64 +326,20 @@
 
         <main class="content">
           <div class="container-fluid p-0">
-           
-             
-                <form action="/add-product" method="POST">
-                  <ul class="seller_addPr-list">
-                    <li class="seller_product-items">
-                      <p for="">Product Name</p>
-                      <input
-                        type="text"
-                        placeholder="Enter Product Name"
-                        name="name"
-                      />
-                    </li>
-                    <!-- <li class="seller_product-items">
-							  <p for="">Brand Name</p>
-							  <input type="text" placeholder="Enter Brand Name" >
-							</li> -->
-                    <!-- <li class="seller_product-items">
-							  <p for="">Category Name</p>
-							  <input type="text" placeholder="Enter Category ">
-							</li> -->
-                    <li class="seller_product-items">
-                      <p for="">Product Description</p>
-                      <input
-                        type="text"
-                        placeholder="Enter product description "
-                        name="description"
-                      />
-                    </li>
-                    <!-- <li class="seller_product-items">
-							  <p for="">Product Quantity</p>
-							  <input type="text" placeholder="Enter product Quantity">
-							</li> -->
-                    <li class="seller_product-items">
-                      <p for="">Product Price</p>
-                      <input
-                        type="text"
-                        placeholder="Enter product Price "
-                        name="price"
-                      />
-                    </li>
-                    <li class="seller_product-items">
-                      <p for="">Product Image</p>
-                      <div class="img_box">
-                        <input
-                          type="text"
-                          name="imageURL"
-                          placeholder="No file chosen"
-                        />
-                      </div>
-                    </li>
-                    <button class="addPro_btn">Add Product</button>
-                  </ul>
-                </form>
-            
+            <form action="/delete-product" method="POST">
+              <p for="">Product ID to Delete:</p>
+              <input
+                type="text"
+                placeholder="Enter Product ID"
+                name="productId"
+                required
+              />
+              <button class="deletePro_btn">Delete Product</button>
+            </form>
           </div>
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
           <div class="container-fluid">
             <div class="row text-muted">
               <div class="col-6 text-start">
@@ -438,12 +395,10 @@
                     >
                   </li>
                 </ul>
-                
               </div>
             </div>
           </div>
-        </footer> -->
-        
+        </footer>
       </div>
     </div>
 
