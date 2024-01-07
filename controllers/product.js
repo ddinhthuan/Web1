@@ -402,10 +402,10 @@ exports.mergeCart = (req, res, next) => {
 };
 
 exports.getaddProduct = (req, res, next) => {
-  if ( req.user.role != "1") {
+  if ( req.user.role == "0") {
     res.render("err1");
   }
-  else if(req.user.role == "1") {
+  else if(req.user.role != "0") {
     //res.send('you are not seller');
     res.render("addProduct");
   }
